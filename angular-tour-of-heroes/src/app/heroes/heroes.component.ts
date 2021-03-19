@@ -18,12 +18,14 @@ export class HeroesComponent implements OnInit {
 
   heroes: Hero[] = [];
   
-  selectedHero?: Hero;
+  //selectedHero?: Hero;
 
-  onSelect(hero: Hero): void {
-  this.selectedHero = hero;
-  this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`); //need ` to eval var
-  }
+  /**
+   * onSelect(hero: Hero): void {
+   * this.selectedHero = hero;
+   * this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`); //need ` to eval var
+   * }
+  **/
   
   getHeroes(): void {
     //this is synchronous and will not work in a real app. Works since local.
