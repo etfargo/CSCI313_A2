@@ -1,22 +1,37 @@
-<h1 class="title">{{title}}</h1>
-<!-- <nav class="nav">
-    <a routerLink="/heroes">Heroes</a>
-    <a routerLink="/dashboard">Dashboard</a>
-</nav> -->
+<div class="card">
+  <div class="card-body">
+    <h1 class="title">{{title}}</h1>
+  </div>
+</div>
 
-<ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" routerLink="/heroes">Hereos</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" routerLink="/dashboard">Dashboard</a>
-    </li>
-  </ul>
+<div class="card">
+  <div class="card-header">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" routerLink="/heroes">Heroes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 <div class="container">
     <div class="row">
-        <div class="col-sm-8"><router-outlet></router-outlet></div>
-        <div class="col-sm-4"><app-messages></app-messages></div>
+        <div class="col-sm-8">
+          <div class="card">
+            <div class="card-body">
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <app-messages></app-messages>
+            </div>
+          </div>
+        </div>
     </div>
 </div>
-<!-- <router-outlet></router-outlet>
-<app-messages></app-messages> -->
