@@ -1,6 +1,7 @@
 /* AppComponent's private CSS styles */
 h1 {
     margin-bottom: 0;
+    text-align: center;
   }
   nav a {
     padding: 1rem;
@@ -18,4 +19,8 @@ h1 {
   }
   nav a.active {
     background-color: black;
+  }
+
+  .title {
+    /*background-color: rgba(172, 4, 4, 0.205);*/
   }
